@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ChocolateAdois</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f8f5f2;
+}
+
+header {
+  background: #3e2723;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.promo {
+  background: #5d4037;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 1.5rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 30px;
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+  text-align: center;
+}
+
+.card h3 {
+  margin: 10px 0;
+  color: #3e2723;
+}
+
+.price {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+button {
+  background: #3e2723;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  background: #5d4037;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: gray;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>🍫 ChocolateAdois</h1>
+  <p>Os melhores ovos de chocolate com promoção exclusiva</p>
+</header>
+
+<div class="promo">
+  🔥 PROMOÇÃO: 2 OVOS POR APENAS R$ 19,90 🔥
+</div>
+
+<div class="container">
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1587248720327-8eb72564be1e" alt="Ovo de chocolate">
+    <div class="card-content">
+      <h3>Ovo ao Leite</h3>
+      <p class="price">R$ 12,90</p>
+      <button>Comprar</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1610450949065-1f2841536c88" alt="Ovo de chocolate branco">
+    <div class="card-content">
+      <h3>Ovo Branco</h3>
+      <p class="price">R$ 12,90</p>
+      <button>Comprar</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1606312619070-d48b4c652a52" alt="Ovo recheado">
+    <div class="card-content">
+      <h3>Ovo Recheado</h3>
+      <p class="price">R$ 14,90</p>
+      <button>Comprar</button>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  © 2026 ChocolateAdois - Todos os direitos reservados
+</footer>
+
+</body>
+</html>
